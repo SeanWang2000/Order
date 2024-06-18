@@ -2,8 +2,8 @@ from binance.um_futures import UMFutures
 from myfunction import get_min_low_price, get_max_high_price, truncate_decimal, get_max_precision
 
 def main():
-    key='588ZlJaFHZQwYMyT8T0jusnX7XyDUKmoynVmAgO5KyhZImkzdfRwct635xmJm5w5'
-    secret='PCdxDU4pfsATKny4f9WFbVCdRgnt5uOEEMRrXalzbiqKrLqkVnwxXhM3nKAocvYp'
+    key='W2qkV5fvSLU3FfddjHTLmsdIFMGshFvvn3YmquAe6LFpiHoxjIisdUf2uDpVeXfh'
+    secret='pQJYqX0JfspYkQpQM6bG7R9Tk93vz8tnc4b6ud9S1ToMYEfwJgHUa4SQljciBNQy'
     cm_futures_client = UMFutures(key=key, secret=secret)
 
     symbol = input("symbol:")

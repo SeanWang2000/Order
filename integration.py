@@ -1,4 +1,5 @@
 import subprocess
+import os
 
 print("選擇操作方式:")
 print("A: 突破買入")
@@ -9,12 +10,24 @@ print("D: 市價賣出並設止損")
 user_choice = input("請輸入選項: ")
 
 if user_choice.upper() == 'A':
-    subprocess.run(['python', 'breakout_buy.py'])
+    try:
+        os.startfile(r'C:\Users\GL63\Dropbox\直接下單\breakout_buy.exe')
+    except Exception as e:
+        print(f"打開 breakout_buy.exe 時出錯: {e}")
 elif user_choice.upper() == 'B':
-    subprocess.run(['python', 'breakout_sell.py'])
+    try:
+        os.startfile(r'C:\Users\GL63\Dropbox\直接下單\breakout_sell.exe')
+    except Exception as e:
+        print(f"打開 breakout_sell.exe 時出錯: {e}")
 elif user_choice.upper() == 'C':
-    subprocess.run(['python', 'market_buy_with_stop.py'])
+    try:
+        os.startfile(r'C:\Users\GL63\Dropbox\直接下單\market_buy_with_stop.exe')
+    except Exception as e:
+        print(f"打開 market_buy_with_stop.exe 時出錯: {e}")
 elif user_choice.upper() == 'D':
-    subprocess.run(['python', 'market_sell_with_stop.py'])
+    try:
+        os.startfile(r'C:\Users\GL63\Dropbox\直接下單\market_sell_with_stop.exe')
+    except Exception as e:
+        print(f"打開 market_sell_with_stop.exe 時出錯: {e}")
 else:
     print("請重新選擇。")
